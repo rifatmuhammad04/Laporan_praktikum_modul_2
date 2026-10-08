@@ -1,30 +1,30 @@
 #include <stdio.h>
 
-int main(){
-    char nama[100], nim[50], kelas[50], ttl[100], alamat[100], hobby[100], nohp[50];
+int main() {
+    char nama[100], nim[50], kelas[50], ttl[100], alamat[100], hobby[100], no_hp[50];
 
-printf("Nama: ");
-scanf("%[^\n]", nama);
-printf("NIM: ");
-scanf("%s", nim);
-printf("kelas paralel: ");
-scanf("%s", kelas);
-printf("Tempat/tanggal lahir: ");
-scanf("%s", ttl);
-printf("Alamat: ");
-scanf("%s", alamat);
-printf("Hobi: ");
-scanf("%s", hobby);
-printf("No.Hp: ");
-scanf("%s", nohp);
+    printf("%-20s: ", "Nama");
+    scanf(" %[^\n]", nama);
+    printf("%-20s: ", "NIM");
+    scanf(" %[^\n]", nim);
+    printf("%-20s: ", "Kelas Paralel");
+    scanf(" %[^\n]", kelas);
+    printf("%-20s: ", "Tempat/Tanggal Lahir");
+    scanf(" %[^\n]", ttl);
+    printf("%-20s: ", "Alamat");
+    scanf(" %[^\n]", alamat);
+    printf("%-20s: ", "Hobby");
+    scanf(" %[^\n]", hobby);
+    printf("%-20s: ", "No. HP");
+    scanf(" %[^\n]", no_hp);
 
-printf("nama: %s\n", nama);
-printf("nim: %s\n", nim);
-printf("kelas paralel: %s\n", kelas);
-printf("ttl: %s\n", ttl);
-printf("alamat: %s\n", alamat);
-printf("hobby: %s\n", hobby);
-printf("no.hp: %s\n", nohp);
+    printf("%-20s: %s\n", "Nama", nama);
+    printf("%-20s: %s\n", "NIM", nim);
+    printf("%-20s: %s\n", "Kelas Paralel", kelas);
+    printf("%-20s: %s\n", "Tempat/Tanggal Lahir", ttl);
+    printf("%-20s: %s\n", "Alamat", alamat);
+    printf("%-20s: %s\n", "Hobby", hobby);
+    printf("%-20s: %s\n", "No. HP", no_hp);
 
-return 0;
+    return 0;
 }
